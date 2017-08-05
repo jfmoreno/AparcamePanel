@@ -1,1 +1,68 @@
 @import '../../theme/sass/auth';
+
+
+img.logoAparcame {
+    margin-left: 45%;
+}
+
+.auth-main {
+
+    background-image: url('../../../assets/img/fondoLogin1680x950.png');
+}
+
+@media screen and (max-width: 1550px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1550x950.png');
+    }
+  }
+
+@media screen and (max-width: 1450px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1450x950.png');
+    }
+  }
+
+@media screen and (max-width: 1350px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1350x950.png');
+    }
+  }
+
+ @media screen and (max-width: 1250px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1250x950.png');
+    }
+  }
+
+@media screen and (max-width: 1150px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1150x950.png');
+    }
+  }
+@media screen and (max-width: 1000px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin1000x950.png');
+    }
+  }
+
+@media screen and (max-width: 850px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin850x950.png');
+    }
+  }
+
+@media screen and (max-width: 750px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin750x950.png');
+    }
+  }
+@media screen and (max-width: 575px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin575x950.png');
+    }
+  }
+ @media screen and (max-width: 465px) {
+    .auth-main {
+        background-image: url('../../../assets/img/fondoLogin465x950.png');
+    }
+  }

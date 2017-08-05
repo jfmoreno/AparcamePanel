@@ -3,6 +3,12 @@
 
 :host /deep/ {
 
+
+    img.logoAparcame {
+      width: 240px;
+  }
+
+
   .page-top {
     background-color: $sidebar;
     position: fixed;
@@ -25,14 +31,15 @@
   }
 
   a.al-logo {
-    color: $sidebar-text;
+    //color: $sidebar-text;
     display: block;
-    font-size: 24px;
-    font-family: $font-family;
-    white-space: nowrap;
-    float: left;
-    outline: none !important;
-    line-height: 60px;
+    //font-size: 24px;
+    //font-family: $font-family;
+    //white-space: nowrap;
+    //float: left;
+    //outline: none !important;
+    line-height: 75px;
+    text-align: center;
 
     span {
       color: $primary;
@@ -46,16 +53,16 @@
   .user-profile {
     float: right;
     min-width: 230px;
-    margin-top: 10px;
+    margin-top: -69px;
   }
 
   .al-user-profile {
     float: right;
-    margin-right: 12px;
+    margin-right: 5px;
     transition: all .15s ease-in-out;
     padding: 0;
-    width: 36px;
-    height: 36px;
+    width: 45px;
+    height: 45px;
     border: 0;
     opacity: 1;
     position: relative;
@@ -77,8 +84,8 @@
       display: block;
     }
     img {
-      width: 45px;
-      height: 45px;
+      width: 55px;
+      height: 55px;
       border-radius: 50%;
     }
   }
@@ -194,6 +201,10 @@
     .al-skin-dropdown {
       display: none;
     }
+        img.logoAparcame {
+    width: 195px;
+    }
+
   }
 
   .profile-toggle-link {
