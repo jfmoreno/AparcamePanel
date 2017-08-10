@@ -19,7 +19,7 @@ export const PAGES_MENU = [
       },
 
       {
-        path: 'Usuarios',
+        path: 'usuarios',
         data: {
           menu: {
             title: 'Usuarios',
@@ -32,7 +32,7 @@ export const PAGES_MENU = [
       },
 
       {
-        path: 'Clientes',
+        path: 'clientes',
         data: {
           menu: {
             title: 'Clientes',
@@ -45,7 +45,7 @@ export const PAGES_MENU = [
       },
 
       {
-        path: 'Ofertas',
+        path: 'ofertas',
         data: {
           menu: {
             title: 'Ofertas',
@@ -56,7 +56,18 @@ export const PAGES_MENU = [
           },
         },
       },
-
+      {
+        path: 'adminTables',
+        data: {
+          menu: {
+            title: 'Administradores',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 4,
+          },
+        },
+      },
 
       {
         path: 'editors',
