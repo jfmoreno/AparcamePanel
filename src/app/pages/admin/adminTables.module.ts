@@ -1,3 +1,5 @@
+import { DefaultModal } from './default-modal/default-modal.component';
+import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -25,9 +27,15 @@ import { AdminTablesService } from './adminTables.service';
     DataTableModule,
     HttpModule,
     HotTableModule,
+    NgbDropdownModule,
+    NgbModalModule,
   ],
   declarations: [
     AdminTables,
+     DefaultModal,
+  ],
+  entryComponents: [
+    DefaultModal,
   ],
   providers: [
     AdminTablesService,

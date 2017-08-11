@@ -12,6 +12,7 @@
       border: 1px solid $border-light !important;
       line-height: 35px;
       vertical-align: middle;
+      text-align: center;
     }
 
     table tr td {
@@ -80,6 +81,23 @@
       justify-content: center;
     }
   }
+
+
+  th.ng2-smart-th.id {
+    width: 8%;
+  }
+  th.ng2-smart-th.puesto {
+      width: 15%;
+  }
+  th.ng2-smart-th.localidad {
+      width: 20%;
+  }
+    th.ng2-smart-th.email {
+      width: 20%;
+  }
+    
 }
+
+
 
 
