@@ -28,7 +28,10 @@ export const routes: Routes = [
       path: 'dashboard', 
       loadChildren: './dashboard/dashboard.module#DashboardModule',
       },
-
+      { 
+        path: 'parkings', 
+        loadChildren: './parkings/parkings.module#ParkingsModule',
+        },
 
       { 
       path: 'adminTables', 

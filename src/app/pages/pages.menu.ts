@@ -19,6 +19,19 @@ export const PAGES_MENU = [
       },
 
       {
+        path: 'parkings',
+        data: {
+          menu: {
+            title: 'Parkings',
+            icon: 'ion-android-home',
+            selected: false,
+            expanded: false,
+            order: 1,
+          },
+        },
+      },
+
+      {
         path: 'usuarios',
         data: {
           menu: {
@@ -26,7 +39,7 @@ export const PAGES_MENU = [
             icon: 'ion-person-stalker',
             selected: false,
             expanded: false,
-            order: 1,
+            order: 2,
           },
         },
       },
@@ -39,7 +52,7 @@ export const PAGES_MENU = [
             icon: 'ion-person-stalker',
             selected: false,
             expanded: false,
-            order: 2,
+            order: 3,
           },
         },
       },
@@ -52,7 +65,7 @@ export const PAGES_MENU = [
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
-            order: 3,
+            order: 4,
           },
         },
       },
@@ -64,7 +77,7 @@ export const PAGES_MENU = [
             icon: 'ion-ios-people',
             selected: false,
             expanded: false,
-            order: 4,
+            order: 5,
           },
         },
       },

@@ -1,0 +1,91 @@
+<div class="modal-content">
+  
+  <div class="modal-header">
+    <h4 class="modal-title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{modalHeader}} - {{modalContent}}</h4>
+    
+    <button class="close" aria-label="Close" (click)="closeModal()">
+     <span aria-hidden="true"><i class="fa fa-remove fa-lg m-t-2" style="color:white;"></i></span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+
+
+    <div class="row">
+
+      <form class="form-horizontal col-md-6">
+        <label class="col-sm-12 form-control-label">Coordenadas Central</label>
+        <div class="form-group row">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud Central">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud Central">
+        </div>
+
+        <label class="col-sm-12 form-control-label">Coordenadas</label>
+        <div class="form-group row">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+            <input type="text" class="form-control col-sm-5" id="Latitud01" placeholder="Latitud">
+            <input type="text" class="form-control col-sm-5" id="Longitud01" placeholder="Longitud">
+        </div>
+      </form>
+
+  
+      <div class="col-md-6">
+        <zona-parking1></zona-parking1>
+      </div>
+      <!--
+        <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12" title="Parking Facultad de Economia" baCardClass="medium-card">
+          <zona-parking1></zona-parking1>
+        </ba-card>
+      -->
+
+    </div>
+
+    <div class="row">
+        <form class="form-horizontal col-md-6">
+            <div class="form-group row">
+                <label for="plazas" class="col-sm-4 form-control-label">Plazas</label>
+                <input type="text" class="form-control col-sm-4" id="Plazas" placeholder="Plazas">
+            </div>
+            <div class="form-group row">
+                <label for="adaptadas" class="col-sm-4 form-control-label">P. Adaptadas</label>
+                <input type="text" class="form-control col-sm-4" id="Plazas" placeholder="P. Plazas">
+            </div>
+            <div class="form-group row">
+                <label for="electricas" class="col-sm-4 form-control-label">P. Eléctricas</label>
+                <input type="text" class="form-control col-sm-4" id="Electricas" placeholder="P. Eléctricas">
+            </div>
+            <div class="form-group row">
+                <label for="cp" class="col-sm-4 form-control-label">Localización</label>
+                <input type="text" class="form-control col-sm-2" id="cp" placeholder="CP">
+                <input type="text" class="form-control col-sm-4" id="localidad" placeholder="Localidad">
+            </div>
+        </form>
+
+      <div class="col-md-6">
+        <ba-picture-uploader [picture]="profile.picture" [defaultPicture]="defaultPicture" [uploaderOptions]="uploaderOptions"></ba-picture-uploader>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+<!--
+  <div class="modal-footer">
+    <button class="btn btn-primary confirm-btn" (click)="closeModal()">Cerrar</button>
+  </div>
+  -->
+</div>
