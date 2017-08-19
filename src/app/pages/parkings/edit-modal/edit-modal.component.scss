@@ -60,3 +60,22 @@ form.form-horizontal.col-md-6.ng-untouched.ng-pristine.ng-valid {
     margin-top: 10px;
     //margin-bottom: 5px;
 }
+
+.validacion {
+  color: firebrick;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.form-group.row.titulo {
+  //margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  margin-left: 20px;
+}
+.form-group {
+  margin-bottom: 0.5rem;
+}

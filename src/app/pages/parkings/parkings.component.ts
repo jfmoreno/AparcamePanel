@@ -32,8 +32,8 @@ export class Parkings {
 
     lgModalShow() {
     const activeModal = this.modalService.open(EditModal, { size: 'lg' });
-    activeModal.componentInstance.modalHeader = 'Código';
-    activeModal.componentInstance.modalContent = 'Nombre del Parking';
+    //activeModal.componentInstance.modalHeader = 'Código';
+    //activeModal.componentInstance.modalContent = 'Nombre del Parking';
   }
 
     toInt(num: string) {

@@ -1,0 +1,18 @@
+
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <p class="collection-item"
+                *ngFor="let longitud of longitudes; let i = index"
+                (click)="displayLongitud(longitud)">
+                Lon {{ i }}: {{ longitud }}
+            </p>
+        </div>
+
+        <div class="col-sm-6">
+            <p  class="collection-item"
+                *ngFor="let latitud of latitudes; let i = index"
+                (click)="displayLatitud(latitud)">
+                Lat {{ i }}: {{ latitud }}
+            </p>
+        </div>
+    </div>

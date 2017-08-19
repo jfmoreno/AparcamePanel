@@ -1,3 +1,5 @@
+import { TodoListComponent } from './todo-list/todo-list.component';
+import { TodoFormComponent } from './todo-form/todo-form.component';
 
 //PARKING 1 ECONOMIA
 import { ZonaParking1 } from './zonaParking1/leafletMaps.component';
@@ -6,7 +8,7 @@ import { EditModal } from './edit-modal.component';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgaModule } from '../../../theme/nga.module';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
@@ -18,6 +20,7 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     NgaModule,
     NgbDropdownModule,
     NgbModalModule,
@@ -29,6 +32,8 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     //PARKING 1
     ZonaParking1,
     EditModal,
+    TodoFormComponent, 
+    TodoListComponent,
   ],
 
   entryComponents: [
