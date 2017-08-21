@@ -25,14 +25,14 @@ export class EditModal implements OnInit {
 */
 
 //LISTADO COORDENADAS
-  //latitudes: string[] = ['38.382214', '38.382401', '38.381278', '38.381100'];
-  //longitudes: string[] = ['-0.514394', '-0.513611', '-0.513116', '-0.513914'];
-
-  latitudes: string[] = [];
+  //latitudes: string[] = ['-0.514394', '-0.513611', '-0.513116', '-0.513914'];
+  //longitudes: string[] =  ['38.382214', '38.382401', '38.381278', '38.381100'];
+ 
   longitudes: string[] = [];
+  latitudes: string[] = [];
+  
 
-    save(latitud: string, longitud: string): void 
-    {
+  save(longitud: string, latitud: string): void {
       this.longitudes.push(longitud);  
       this.latitudes.push(latitud);
     }

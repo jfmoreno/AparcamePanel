@@ -1,3 +1,5 @@
+
+import { FormListComponent } from './edit-modal/form-list/form-list.component';
 import { TodoListComponent } from './edit-modal/todo-list/todo-list.component';
 import { TodoFormComponent } from './edit-modal/todo-form/todo-form.component';
 import { ZonaParking1 } from './edit-modal/zonaParking1/leafletMaps.component';
@@ -45,6 +47,9 @@ import { DataFilterPipe } from './data-filter.pipe';
 
     TodoFormComponent, 
     TodoListComponent,
+    
+    FormListComponent,
+
   ],
 
   entryComponents: [

@@ -98,25 +98,33 @@
                   </div>
                 </div>
               </div>
-              
+              <!--
             <div class="row">
                 <div class="col-md-12">
                       <todo-form (onSubmit)="save($event)"></todo-form>
                 </div>
             </div>
                 <div class="col-md-12">
-                    <todo-list [latitudes]="latitudes" [longitudes]="longitudes"></todo-list>
+                    <todo-list [longitudes]="longitudes" [latitudes]="latitudes"></todo-list>
                 </div>
-            
+            -->
+            <div class="row">   
+                <div class="col-md-12">
+                    <form-list></form-list>
+                </div>
+            </div>
+
 
               <div class="modal-footer">
-                  <button class="btn btn-primary btn-raised waves-light input-block-level" style="float: right; margin-botton:10px;"
-                  type="submit"
-                  [disabled]="!postForm.form.valid"
-                  >Guardar
+                  <button class="btn btn-primary btn-raised waves-light input-block-level" 
+                    style="float: right; margin-botton:10px;"
+                    type="submit"
+                    [disabled]="!postForm.form.valid">
+                    Guardar
                   </button>
               </div>
           </form>
+
   
         <div class="col-md-6">
           <ba-picture-uploader [picture]="profile.picture" [defaultPicture]="defaultPicture" [uploaderOptions]="uploaderOptions"></ba-picture-uploader>

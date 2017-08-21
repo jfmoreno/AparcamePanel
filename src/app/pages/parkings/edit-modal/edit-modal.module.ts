@@ -1,3 +1,5 @@
+
+import { FormListComponent } from './form-list/form-list.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
 import { TodoFormComponent } from './todo-form/todo-form.component';
 
@@ -34,6 +36,11 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     EditModal,
     TodoFormComponent, 
     TodoListComponent,
+
+    FormListComponent,
+
+
+
   ],
 
   entryComponents: [

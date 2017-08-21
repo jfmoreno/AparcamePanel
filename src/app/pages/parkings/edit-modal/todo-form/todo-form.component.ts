@@ -10,8 +10,8 @@ import { Post } from '../edit-post';
 export class TodoFormComponent
 {
     @Output() onSubmit = new EventEmitter<any>();
-    latitud: string;
     longitud: string;
+    latitud: string;
 
     public submit()
     {
@@ -20,7 +20,7 @@ export class TodoFormComponent
         this.onSubmit.emit(this.latitud);
 
         //una vez escritos en el input, limpio el input
-        this.latitud = '';
         this.longitud = '';
+        this.latitud = '';
     }
 }
