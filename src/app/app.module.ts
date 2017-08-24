@@ -1,3 +1,4 @@
+import { LoginModule } from './pages/login/login.module';
 
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -49,6 +50,7 @@ export type StoreType = {
     NgbModule.forRoot(),
     PagesModule,
     routing,
+    LoginModule,
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS,

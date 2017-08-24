@@ -1,6 +1,8 @@
+import { Login } from './login/login.component';
 import { Routes, RouterModule } from '@angular/router';
 import { Pages } from './pages.component';
 import { ModuleWithProviders } from '@angular/core';
+
 
 // noinspection TypeScriptValidateTypes
 
@@ -25,17 +27,20 @@ export const routes: Routes = [
       pathMatch: 'full',
       },
       { 
-      path: 'dashboard', 
-      loadChildren: './dashboard/dashboard.module#DashboardModule',
+        path: 'dashboard', 
+        loadChildren: './dashboard/dashboard.module#DashboardModule',
       },
       { 
         path: 'parkings', 
         loadChildren: './parkings/parkings.module#ParkingsModule',
         },
-
       { 
-      path: 'adminTables', 
-      loadChildren: './admin/adminTables.module#AdminTablesModule',
+        path: 'usuarios', 
+        loadChildren: './usuarios/usuarios.module#UsuariosModule',
+      },
+      { 
+        path: 'adminTables', 
+        loadChildren: './admin/adminTables.module#AdminTablesModule',
       },
 
 

@@ -1,0 +1,70 @@
+
+<div class="widgets">
+    <div class="row" style="margin-left:0px">
+
+        <ba-card title="Usuarios Aparcame" baCardClass="with-scroll" class="data-table-container">
+
+            <div class="panel panel-default">
+
+                <a class="buscar">Buscar</a>
+                <div class="panel-heading">
+                    <input class="form-control" [(ngModel)]="filterQuery" style="width:50%;" />
+                </div>
+                        
+                            
+                <table class="table table-striped" [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">
+                                <mfDefaultSorter by="id">ID </mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="imagen">Imagen</mfDefaultSorter>
+                            </th>
+                            <th style="width: 30%">
+                                <mfDefaultSorter by="nombre">Nombre</mfDefaultSorter>
+                            </th>
+                            <th style="width: 20%">
+                                <mfDefaultSorter by="email">Email</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="cp">CP</mfDefaultSorter>
+                            </th>
+                            <th style="width: 20%">
+                                <mfDefaultSorter by="localidad">Localidad</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="nivel">Nivel</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%;">Ver</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of mf.data">
+                            <td (click)="lgModalShow()">{{item.id}}</td>
+                            <td (click)="lgModalShow()">{{item.imagen}}</td>
+                            <td (click)="lgModalShow()"><p class="nombre">{{item.nombre}}</p></td>
+                            <td (click)="lgModalShow()">{{item.email}}</td>
+                            <td (click)="lgModalShow()"><p class="cp">{{item.cp}}</p></td>
+                            <td (click)="lgModalShow()"><p class="localidad">{{item.localidad}}</p></td>
+                            <td (click)="lgModalShow()">{{item.nivel}}</td>
+                            <td style="padding-right: 5px !important;"><button class="btn btn-info" (click)="lgModalShow()"><i class="fa fa-eye" aria-hidden="true"></i></button></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="9">
+                                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15]"></mfBootstrapPaginator>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+           
+        </ba-card>
+
+    </div>
+</div>
+

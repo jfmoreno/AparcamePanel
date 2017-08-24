@@ -1,0 +1,49 @@
+
+<form novalidate [formGroup]="coordenadasForm" (ngSubmit)="submit(coordenadasForm.value)"  #todoForm="ngForm">
+    <label class="col-sm-12 form-control-label" style="margin-left: -10px;">Coordenadas</label>
+        <div class="form-group row">
+            <div class="col-sm-5">
+                <div formArrayName="longitudes">
+                    <div *ngFor="let longitud of coordenadasForm.controls.longitudes.controls; let i = index" >
+                        <!--<label>Coordendas {{i+1}} </label>-->
+                        <input class="form-control" placeholder="Longitud"
+                        type="text" 
+                        id="longitud" 
+                        name="longitud"
+                        required 
+                        formControlName="{{i}}" 
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-5">
+                    <div formArrayName="latitudes">
+                        <div *ngFor="let latitud of coordenadasForm.controls.latitudes.controls; let i = index" >
+                            <!--<label>Coordendas {{i+1}} </label>-->
+                            <input class="form-control" placeholder="Latitud"
+                            type="text" 
+                            id="latitud" 
+                            name="latitud"
+                            required
+                            formControlName="{{i}}" 
+                            />
+                        </div>
+                    </div>
+                </div>
+
+
+            <div class="col-sm-2">
+                <button class="btn btn-default btn-raised" (click)="addNumber()" [disabled]="!todoForm.form.valid">
+                    <i class="ion-ios-plus-outline"></i>
+                </button> 
+            </div>
+
+        </div>
+        
+        <button class="btn btn-success btn-raised" type="submit" [disabled]="!todoForm.form.valid">Añadir</button>
+
+       <!-- <pre>{{coordenadasForm.value | json }}</pre>-->
+
+</form>
+    

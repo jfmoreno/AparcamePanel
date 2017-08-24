@@ -1,0 +1,137 @@
+<div class="modal-content">
+  
+  <div class="modal-header">
+      <h4 class="modal-title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{centrales.cod}} - {{centrales.nombre}}</h4>
+      <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true"><i class="fa fa-remove fa-lg m-t-2" style="color:white;"></i></span>
+      </button>
+  </div>
+
+  <div class="modal-body">
+
+      <div class="row">
+
+          <form class="form-horizontal col-md-6" (ngSubmit)="onSubmit()" #postForm="ngForm">
+              <div class="form-group row">
+                  <label for="cod" class="col-sm-4 form-control-label">Cod</label>
+                  <input type="text" class="form-control col-sm-4" placeholder="Código" 
+                  id="cod" 
+                  name="cod"
+                  [(ngModel)]="centrales.cod"
+                  #cod="ngModel"  
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label for="nombre" class="col-sm-4 form-control-label">Nombre</label>
+                  <input type="text" class="form-control col-sm-4" placeholder="Nombre" 
+                  id="nombre" 
+                  name="nombre"
+                  [(ngModel)]="centrales.nombre"
+                  #nombre="ngModel"  
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label for="plazas" class="col-sm-4 form-control-label">Plazas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="Plazas" 
+                  id="plazas" 
+                  name="plazas"
+                  [(ngModel)]="centrales.plazas"
+                  #plazas="ngModel"  
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label for="adaptadas" class="col-sm-4 form-control-label">P. Adaptadas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="P. Adaptadas" 
+                  id="adaptadas" 
+                  name="adaptadas"
+                  [(ngModel)]="centrales.adaptadas"
+                  #adaptadas="ngModel"  
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label for="electricas" class="col-sm-4 form-control-label">P. Eléctricas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="P. Elétricas" 
+                  id="electricas" 
+                  name="electricas"
+                  [(ngModel)]="centrales.electricas"
+                  #electricas="ngModel"  
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label for="cp" class="col-sm-4 form-control-label">Localización</label>
+                  <input type="text" class="form-control col-sm-2" placeholder="CP" 
+                  id="cp" 
+                  name="cp"
+                  [(ngModel)]="centrales.cp"
+                  #cp="ngModel"  
+                  required>
+                  <input type="text" class="form-control col-sm-5" placeholder="Localidad" 
+                  id="localidad" 
+                  name="localidad"
+                  [(ngModel)]="centrales.localidad"
+                  #localidad="ngModel"  
+                  required>
+              </div>
+
+              <label class="col-sm-12 form-control-label" style="margin-left: -10px;">Coordenadas Central</label>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Longitud Central" 
+                    id="longitud01" 
+                    name="longitud01"
+                    [(ngModel)]="centrales.longitud01"
+                    #longitud01="ngModel" 
+                  required>
+                  <div class="validacion" [hidden]="longitud01.valid || longitud01.pristine">
+                      Longitud Requerida    
+                  </div>  
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Latitud Central"
+                    id="latitud01" 
+                    name="latitud01"
+                    [(ngModel)]="centrales.latitud01"
+                    #latitud01="ngModel" 
+                  required>
+                  <div class="validacion" [hidden]="latitud01.valid || latitud01.pristine">
+                      Latitud Requerida   
+                  </div>
+                </div>
+              </div>
+              <!--
+            <div class="row">
+                <div class="col-md-12">
+                      <todo-form (onSubmit)="save($event)"></todo-form>
+                </div>
+            </div>
+                <div class="col-md-12">
+                    <todo-list [longitudes]="longitudes" [latitudes]="latitudes"></todo-list>
+                </div>
+      
+            <div class="row">   
+                <div class="col-md-12">
+                    <form-list></form-list>
+                </div>
+            </div>
+            -->
+
+              <div class="modal-footer">
+                  <button class="btn btn-primary btn-raised waves-light input-block-level" 
+                    style="float: right; margin-botton:10px;"
+                    type="submit"
+                    [disabled]="!postForm.form.valid">
+                    Guardar
+                  </button>
+              </div>
+          </form>
+
+  
+        <div class="col-md-6">
+          <ba-picture-uploader [picture]="profile.picture" [defaultPicture]="defaultPicture" [uploaderOptions]="uploaderOptions"></ba-picture-uploader>
+        </div>
+  
+      </div>
+
+
+  </div>
+</div>
