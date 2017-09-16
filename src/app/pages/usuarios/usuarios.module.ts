@@ -1,10 +1,8 @@
-
-import { FormListComponent } from './user-modal/form-list/form-list.component';
-
-
+import { FavoritosTable } from './user-modal/favoritosTable/favoritosTable.component';
+import { HistorialTable } from './user-modal/historialTable/historialTable.component';
+import { AparcaTable } from './user-modal/aparcaTable/aparcaTable.component';
 import { UserModal } from './user-modal/user-modal.component';
 import { NgbModalModule, NgbDropdownModule, NgbPopoverModule } from '@ng-bootstrap/ng-bootstrap';
-import { JWBootstrapSwitchModule } from 'jw-bootstrap-switch-ng2';
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -19,7 +17,7 @@ import { routing } from './usuarios.routing';
 import { Usuarios } from './usuarios.component';
 import { UsuariosService } from './usuarios.service';
 import { DataFilterPipe } from './data-filter.pipe';
-
+import {TabsModule} from "ngx-tabs";
 
 @NgModule({
 
@@ -35,14 +33,16 @@ import { DataFilterPipe } from './data-filter.pipe';
     NgbDropdownModule,
     NgbPopoverModule,
     DataTableModule,
-    JWBootstrapSwitchModule,
+    TabsModule,
   ],
 
   declarations: [
     Usuarios,
     UserModal,
     DataFilterPipe,
-    FormListComponent,
+    AparcaTable,
+    HistorialTable,
+    FavoritosTable,
   ],
 
   entryComponents: [

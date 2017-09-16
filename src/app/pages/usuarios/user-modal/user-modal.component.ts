@@ -15,63 +15,23 @@ import { NgUploaderOptions } from 'ngx-uploader';
 
 export class UserModal implements OnInit {
 
-  /*modalHeader: string;
-  modalContent: string = `Lorem ipsum dolor sit amet,
-   consectetuer adipiscing elit, sed diam nonummy
-   nibh euismod tincidunt ut laoreet dolore magna aliquam
-   erat volutpat. Ut wisi enim ad minim veniam, quis
-   nostrud exerci tation ullamcorper suscipit lobortis
-   nisl ut aliquip ex ea commodo consequat.`;
-*/
 
-//LISTADO COORDENADAS
-  //latitudes: string[] = ['-0.514394', '-0.513611', '-0.513116', '-0.513914'];
-  //longitudes: string[] =  ['38.382214', '38.382401', '38.381278', '38.381100'];
- 
-  longitudes: string[] = [];
-  latitudes: string[] = [];
-  
-
-  save(longitud: string, latitud: string): void {
-      this.longitudes.push(longitud);  
-      this.latitudes.push(latitud);
-    }
-
-  centrales: Post = new Post(
+  usuario: Post = new Post(
     1, 
-    'A1',
-    'Nombre Parking',
-    '03007',
-    'San Vicente del Raspeig',
-    180,
-    18,
-    2,
-    '38.38167691521913',
-    '-0.5137456208467484',
-    '38.3816',
-    '-0.5137',
+    '17/05/2017',
+    2000,
+    'Jose Fco Moreno Fernández',
+    'josefcomoreno85@gmail.com',
+    'Princesa Mercedes N12 4ºC',
+    '03006',
+    'Alicante',
   );
   get post() {
-    return JSON.stringify(this.centrales);
+    return JSON.stringify(this.usuario);
   }
   onSubmit() {
-    console.log(this.centrales);
+    console.log(this.usuario);
   }
-
-
-  //IMAGEN//
-  public defaultPicture = 'assets/img/theme/nofoto.png';
-  public profile: any = {
-    picture: 'assets/img/parking1.png',
-  };
-  public uploaderOptions: NgUploaderOptions = {
-    // url: 'http://website.com/upload'
-    url: '',
-  };
-  public fileUploaderOptions: NgUploaderOptions = {
-    // url: 'http://website.com/upload'
-    url: '',
-  };
 
 
   constructor(private activeModal: NgbActiveModal) {
@@ -82,5 +42,8 @@ export class UserModal implements OnInit {
   closeModal() {
     this.activeModal.close();
   }
+
+
+  
 }
 

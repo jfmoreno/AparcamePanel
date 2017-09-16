@@ -45,8 +45,8 @@ export class AdminTables {
         title: 'E-mail',
         type: 'string',
       },
-      puesto : {
-        title: 'Puesto',
+      empresa : {
+        title: 'Empresa',
         type: 'string',
       },
       localidad: {

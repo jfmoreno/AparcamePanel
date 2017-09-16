@@ -5,12 +5,18 @@
         <ba-card title="Parkings Aparcame" baCardClass="with-scroll" class="data-table-container">
 
             <div class="panel panel-default">
-
-                <a class="buscar">Buscar</a>
-                <div class="panel-heading">
-                    <input class="form-control" [(ngModel)]="filterQuery" style="width:50%;" />
+                
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <a class="buscar">Buscar</a>
+                        <div class="panel-heading">
+                        <input class="form-control" [(ngModel)]="filterQuery"/>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="margin-top: 25px;">
+                    <button class="btn btn-success" (click)="addParkingModal()"><i class="fa fa-plus-circle" aria-hidden="true"></i> Añadir</button>
+                    </div>
                 </div>
-                        
                             
                 <table class="table table-striped" [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
                     <thead>
@@ -18,16 +24,16 @@
                             <th style="width: 5%">
                                 <mfDefaultSorter by="id">ID </mfDefaultSorter>
                             </th>
-                            <th style="width: 10%">
+                            <th style="width: 7%">
                                 <mfDefaultSorter by="codP">Código</mfDefaultSorter>
                             </th>
-                            <th style="width: 40%">
+                            <th style="width: 30%">
                                 <mfDefaultSorter by="nombre">Nombre</mfDefaultSorter>
                             </th>
                             <th style="width: 10%">
                                 <mfDefaultSorter by="cp">CP</mfDefaultSorter>
                             </th>
-                            <th style="width: 20%">
+                            <th style="width: 17%">
                                 <mfDefaultSorter by="localidad">Localidad</mfDefaultSorter>
                             </th>
                             <th style="width: 10%">
@@ -44,15 +50,15 @@
                     </thead>
                     <tbody>
                         <tr *ngFor="let item of mf.data">
-                            <td (click)="lgModalShow()">{{item.id}}</td>
-                            <td (click)="lgModalShow()">{{item.codP}}</td>
-                            <td (click)="lgModalShow()"><p class="nombre">{{item.nombre}}</p></td>
-                            <td (click)="lgModalShow()">{{item.cp}}</td>
-                            <td (click)="lgModalShow()"><p class="localidad">{{item.localidad}}</p></td>
-                            <td (click)="lgModalShow()">{{item.plazas}}</td>
-                            <td (click)="lgModalShow()">{{item.adaptadas}}</td>
-                            <td (click)="lgModalShow()">{{item.electricas}}</td>
-                            <td style="padding-right: 5px !important;"><button class="btn btn-info" (click)="lgModalShow()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+                            <td (click)="editModalShow()">{{item.id}}</td>
+                            <td (click)="editModalShow()">{{item.codP}}</td>
+                            <td (click)="editModalShow()"><p class="nombre">{{item.nombre}}</p></td>
+                            <td (click)="editModalShow()">{{item.cp}}</td>
+                            <td (click)="editModalShow()"><p class="localidad">{{item.localidad}}</p></td>
+                            <td (click)="editModalShow()">{{item.plazas}}</td>
+                            <td (click)="editModalShow()">{{item.adaptadas}}</td>
+                            <td (click)="editModalShow()">{{item.electricas}}</td>
+                            <td style="padding-right: 5px !important;"><button class="btn btn-info" (click)="editModalShow()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
                         </tr>
                     </tbody>
 

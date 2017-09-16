@@ -44,16 +44,20 @@
   }
     
   p.nombre {
-    width: 150px;
+    width: 180px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 p.localidad {
-    width: 110px;
+    width: 150px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
 
 
+.avatarU {
+    width: 45px;
+    border-radius: 45px;
+}

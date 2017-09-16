@@ -1,0 +1,111 @@
+<div class="modal-content">
+  
+  <div class="modal-header">
+      <h4 class="modal-title"><i class="fa fa-plus-square" aria-hidden="true"></i> Añadir Parking</h4>
+      <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true"><i class="fa fa-remove fa-lg m-t-2" style="color:white;"></i></span>
+      </button>
+  </div>
+
+  <div class="modal-body">
+
+      <div class="row">
+
+          <form class="form-horizontal col-md-6">
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">Cod</label>
+                  <input type="text" class="form-control col-sm-4" placeholder="Código" 
+                  id="cod" 
+                  name="cod" 
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">Nombre</label>
+                  <input type="text" class="form-control col-sm-4" placeholder="Nombre" 
+                  id="nombre" 
+                  name="nombre"
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">Plazas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="Plazas" 
+                  id="plazas" 
+                  name="plazas"
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">P. Adaptadas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="P. Adaptadas" 
+                  id="adaptadas" 
+                  name="adaptadas"
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">P. Eléctricas</label>
+                  <input type="number" class="form-control col-sm-4" placeholder="P. Elétricas" 
+                  id="electricas" 
+                  name="electricas"
+                  required>
+              </div>
+              <div class="form-group row">
+                  <label class="col-sm-4 form-control-label">Localización</label>
+                  <input type="text" class="form-control col-sm-2" placeholder="CP" 
+                  id="cp" 
+                  name="cp"
+                  required>
+                  <input type="text" class="form-control col-sm-5" placeholder="Localidad" 
+                  id="localidad" 
+                  name="localidad"
+                  required>
+              </div>
+
+              <label class="col-sm-12 form-control-label" style="margin-left: -10px;">Coordenadas Central</label>
+              <div class="form-group row">
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Longitud Central" 
+                    id="longitud01" 
+                    name="longitud01"
+                    required>
+ 
+                </div>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" placeholder="Latitud Central"
+                    id="latitud01" 
+                    name="latitud01"
+                    required>
+
+                </div>
+              </div>
+
+            <div class="row">   
+                <div class="col-md-12">
+                    <form-list2></form-list2>
+                </div>
+            </div>
+
+
+              <div class="modal-footer">
+                  <button class="btn btn-primary btn-raised waves-light input-block-level" 
+                    style="float: right; margin-botton: 10px;"
+                    type="submit">
+                    Guardar
+                  </button>
+              </div>
+          </form>
+
+  
+        <div class="col-md-6">
+            <img-parking2 
+                [picture]="profile.picture" 
+                [defaultPicture]="defaultPicture" 
+                [uploaderOptions]="uploaderOptions">
+            </img-parking2>
+
+            <zona-parking2></zona-parking2>
+        </div>
+  
+      </div>
+
+
+  </div>
+</div>

@@ -1,17 +1,13 @@
 export class Post {
     constructor(
         public id?: number,
-        public cod?: string,
+        public fecha?: string,
+        public puntos?: number,
         public nombre?: string,
+        public email?: string,
+        public direccion?: string,
         public cp?: string,
         public localidad?: string,
-        public plazas?: number,
-        public adaptadas?: number,
-        public electricas?: number,
-        public longitud01?: string,
-        public latitud01?: string,
-        public longitud02?: string,
-        public latitud02?: string,
     )
     {}
 }

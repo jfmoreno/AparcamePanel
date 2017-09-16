@@ -21,7 +21,7 @@
                             <th style="width: 10%">
                                 <mfDefaultSorter by="imagen">Imagen</mfDefaultSorter>
                             </th>
-                            <th style="width: 30%">
+                            <th style="width: 25%">
                                 <mfDefaultSorter by="nombre">Nombre</mfDefaultSorter>
                             </th>
                             <th style="width: 20%">
@@ -30,7 +30,7 @@
                             <th style="width: 10%">
                                 <mfDefaultSorter by="cp">CP</mfDefaultSorter>
                             </th>
-                            <th style="width: 20%">
+                            <th style="width: 15%">
                                 <mfDefaultSorter by="localidad">Localidad</mfDefaultSorter>
                             </th>
                             <th style="width: 10%">
@@ -42,7 +42,7 @@
                     <tbody>
                         <tr *ngFor="let item of mf.data">
                             <td (click)="lgModalShow()">{{item.id}}</td>
-                            <td (click)="lgModalShow()">{{item.imagen}}</td>
+                            <td (click)="lgModalShow()"><img class="avatarU" src="{{ item.imagen }}"></td>
                             <td (click)="lgModalShow()"><p class="nombre">{{item.nombre}}</p></td>
                             <td (click)="lgModalShow()">{{item.email}}</td>
                             <td (click)="lgModalShow()"><p class="cp">{{item.cp}}</p></td>

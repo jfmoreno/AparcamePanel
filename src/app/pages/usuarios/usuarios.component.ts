@@ -6,6 +6,7 @@ import { LocalDataSource } from 'ng2-smart-table';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { UserModal } from './user-modal/user-modal.component';
+import { NgUploaderOptions } from 'ngx-uploader';
 
 //import { DatosTokenService } from './../services/datostoken.service';
 
@@ -21,7 +22,7 @@ export class Usuarios {
     data;
     filterQuery = '';
     rowsOnPage = 10;
-    sortBy = 'email';
+    sortBy = 'id';
     sortOrder = 'asc';
 
     constructor(private service: UsuariosService, private modalService: NgbModal) {

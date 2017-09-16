@@ -1,0 +1,28 @@
+<div class="vertical-scroll">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="imagen"><i class="fa fa-picture-o" aria-hidden="true"></i></th>
+      <th class="oferta">Oferta</th>
+      <th class="lugar">Lugar</th>
+      <th class="direccion">Direccion</th>
+      <th class="localidad">Localidad</th>
+      <th class="fecha">Fecha/Hora</th>
+      <th class="puntos">Puntos</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of historialTableData">
+      <td><img class="avatarO" src="{{ item.imagen }}"></td>
+      <td><p class="oferta">{{ item.oferta }}</p></td>
+      <td><p class="lugar">{{ item.lugar }}</p></td>
+      <td><p class="direccion">{{ item.direccion }}</p></td>
+      <td><p class="localidad">{{ item.localidad }}</p></td>
+      <td><p class="fecha">{{ item.fecha }}</p></td>
+      <td><p class="puntos">{{ item.puntos }}</p></td>
+      <td><p class="flecha"><i class="icon-down"></i></p></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

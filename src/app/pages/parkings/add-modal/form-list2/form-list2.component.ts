@@ -5,12 +5,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   moduleId: module.id,
-  selector: 'form-list',
-  templateUrl: 'form-list.html',
-  styleUrls: [('./form-list.scss')],
+  selector: 'form-list2',
+  templateUrl: 'form-list2.html',
+  styleUrls: [('./form-list2.scss')],
 
 })
-export class FormListComponent {
+export class FormList2Component {
   name: string;
   coordenadasForm: FormGroup;
 

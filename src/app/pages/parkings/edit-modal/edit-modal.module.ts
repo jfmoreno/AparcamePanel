@@ -1,3 +1,4 @@
+import { ImgParking } from './imgParking/imgParking.component';
 
 import { FormListComponent } from './form-list/form-list.component';
 import { TodoListComponent } from './todo-list/todo-list.component';
@@ -27,6 +28,7 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     NgbDropdownModule,
     NgbModalModule,
     SlimLoadingBarModule.forRoot(),
+    
 
   ],
 
@@ -36,10 +38,9 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     EditModal,
     TodoFormComponent, 
     TodoListComponent,
-
+    ImgParking,
+    
     FormListComponent,
-
-
 
   ],
 

@@ -1,0 +1,26 @@
+<div class="vertical-scroll">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th class="id">ID</th>
+      <th class="parking">Parking</th>
+      <th class="fecha">Fecha/Hora</th>
+      <th class="latitud">Latitud</th>
+      <th class="longitud">Longitud</th>
+      <th class="puntos">Puntos</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of aparcTableData">
+      <td><p class="id">{{ item.id }}</p></td>
+      <td><p class="parking">{{ item.parking }}</p></td>
+      <td><p class="fecha">{{ item.date }}</p></td>
+      <td><p class="latitud">{{ item.latitud }}</p></td>
+      <td><p class="longitud">{{ item.longitud }}</p></td>
+      <td><p class="puntos">{{ item.puntos }}</p></td>
+      <td><p class="flecha"><i class="icon-up"></i></p></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

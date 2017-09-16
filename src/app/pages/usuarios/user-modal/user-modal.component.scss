@@ -33,7 +33,10 @@
     will-change: transform;
     z-index: 0;
 }
-
+.modal-footer {
+  padding: 0px;
+  margin-top: 10px;
+}
 
 
 label.col-sm-12.form-control-label {
@@ -75,3 +78,50 @@ form.form-horizontal.col-md-6.ng-untouched.ng-pristine.ng-valid {
 .form-group {
   margin-bottom: 0.5rem;
 }
+
+.foto.picture-group {
+  border: 2px dashed #b8b8b8;
+  width: 70%;
+  height: 280px;
+  border-radius: 150px;
+  margin-left: 15%;
+}
+
+.foto.picture-group.picture-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 150px;
+}
+
+img.avatarU {
+  width: 100%;
+  border-radius: 200px;
+}
+
+label#falta {
+  padding-bottom: 0px;
+}
+label#nivel {
+  padding-bottom: 0px;
+  font-size: 35px;
+  font-weight: 700;
+  color: greenyellow;
+  margin-left: 0px;
+}
+label#localidad {
+  padding-bottom: 0px;
+}
+label#cp {
+  padding-bottom: 0px;
+}
+label#direccion{
+  padding-bottom: 0px;
+}
+label#email {
+  padding-bottom: 0px;
+}
+label#nombre {
+  padding-bottom: 0px;
+}
+
+

@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { ViewCell } from 'ng2-smart-table';
 
@@ -6,6 +7,7 @@ import { LocalDataSource } from 'ng2-smart-table';
 
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { EditModal } from './edit-modal/edit-modal.component';
+import { AddModal } from './add-modal/add-modal.component';
 
 //import { DatosTokenService } from './../services/datostoken.service';
 
@@ -30,11 +32,17 @@ export class Parkings {
     });
   }
 
-    lgModalShow() {
+    editModalShow() {
     const activeModal = this.modalService.open(EditModal, { size: 'lg' });
     //activeModal.componentInstance.modalHeader = 'Código';
     //activeModal.componentInstance.modalContent = 'Nombre del Parking';
   }
+
+  addParkingModal() {
+    const activeModal = this.modalService.open(AddModal, { size: 'lg' });
+
+  }
+
 
     toInt(num: string) {
         return +num;

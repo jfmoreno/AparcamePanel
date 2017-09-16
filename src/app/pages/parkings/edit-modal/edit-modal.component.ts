@@ -1,3 +1,4 @@
+import { ImgParking } from './imgParking/imgParking.component';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { Post } from './edit-post';
 
@@ -5,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { LocalDataSource } from 'ng2-smart-table';
 import { NgUploaderOptions } from 'ngx-uploader';
+
 
 
 @Component({
@@ -61,9 +63,8 @@ export class EditModal implements OnInit {
 
   //IMAGEN//
   public defaultPicture = 'assets/img/theme/nofoto.png';
-  public profile: any = {
-    picture: 'assets/img/parking1.png',
-  };
+  public profile: any = { picture: 'assets/img/parking1.png' };
+  
   public uploaderOptions: NgUploaderOptions = {
     // url: 'http://website.com/upload'
     url: '',

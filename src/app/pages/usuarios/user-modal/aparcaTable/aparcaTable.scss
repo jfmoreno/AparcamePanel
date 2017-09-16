@@ -1,0 +1,68 @@
+img.avatarO {
+    width: 50%;
+  }
+
+th.id {
+    font-weight: 700;
+}
+th.parking {
+  font-weight: 700;
+}
+th.latitud {
+  font-weight: 700;
+}
+th.longitud {
+  font-weight: 700;
+}
+th.fecha {
+  font-weight: 700;
+}
+th.puntos {
+  font-weight: 700;
+  
+}
+.table > tbody > tr > td {
+  line-height: 30px;
+}
+p.parking {
+  width: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.fecha {
+  width: 115px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+p.latitud {
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.longitud {
+  width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+p.puntos {
+  width: 55px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  color: greenyellow;
+  text-align: right;
+  font-size: 20px
+}
+
+p.flecha {
+  text-align: left;
+  margin-left: -40px;
+  margin-top: 10px;
+}

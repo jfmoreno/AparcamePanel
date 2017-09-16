@@ -1,0 +1,67 @@
+img.avatarO {
+    width: 65%;
+  }
+
+th.imagen {
+    width: 80px; 
+}
+th.oferta {
+  font-weight: 700;
+}
+th.lugar {
+  font-weight: 700;
+}
+th.direccion {
+  font-weight: 700;
+}
+th.localidad {
+  font-weight: 700;
+}
+th.puntos {
+  font-weight: 700;
+}
+.table > tbody > tr > td {
+  line-height: 30px;
+}
+
+i.fa.fa-heart {
+  color: red;
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+p.oferta {
+  width: 160px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.lugar {
+  width: 140px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.direccion {
+  width: 145px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.localidad {
+  width: 110px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.puntos {
+  width: 55px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 500;
+  color: #40daf1;
+  font-size: 20px;
+  text-align: center;
+}
+

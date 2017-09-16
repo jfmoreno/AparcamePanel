@@ -1,6 +1,6 @@
-
-import { FormListComponent } from './form-list/form-list.component';
-
+import { FavoritosTable } from './favoritosTable/favoritosTable.component';
+import { HistorialTable } from './historialTable/historialTable.component';
+import { AparcaTable } from './aparcaTable/aparcaTable.component';
 import { UserModal } from './user-modal.component';
 
 import { NgModule } from '@angular/core';
@@ -9,9 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgaModule } from '../../../theme/nga.module';
 import { SlimLoadingBarModule } from 'ng2-slim-loading-bar';
 import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-
-//import { routing } from './pEstadisticas.routing';
-
+import {TabsModule} from "ngx-tabs";
 
 @NgModule({
   imports: [
@@ -22,12 +20,14 @@ import { NgbDropdownModule, NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
     NgbDropdownModule,
     NgbModalModule,
     SlimLoadingBarModule.forRoot(),
-
+    TabsModule,
   ],
 
   declarations: [
     UserModal,
-    FormListComponent,
+    AparcaTable,
+    HistorialTable,
+    FavoritosTable,
   ],
 
   entryComponents: [

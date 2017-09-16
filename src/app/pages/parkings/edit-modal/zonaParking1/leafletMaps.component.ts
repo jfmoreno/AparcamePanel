@@ -21,7 +21,7 @@ export class ZonaParking1 {
     L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
     }).addTo(map);
 
-    var polygon = L.polygon([
+    let polygon = L.polygon([
       [38.382214, -0.514394],
       [38.382401, -0.513611],
       [38.381278, -0.513116],
@@ -30,7 +30,7 @@ export class ZonaParking1 {
     ]).addTo(map);
 
 
-    var universidad = L.marker([38.38185353024073, -0.5137838423252106]).addTo(map)
+    let universidad = L.marker([38.38185353024073, -0.5137838423252106]).addTo(map)
       .bindPopup('Parking F. de Economia')
       .openPopup();   
   }
