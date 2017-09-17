@@ -18,7 +18,7 @@
       "option1": "Option 1"
     },
     "menu": {
-      "dashboard": "Dashboard",
+      "dashboard": "Home",
       "editors": "Editors",
       "ck_editor": "CKEditor",
       "components": "Components",
@@ -58,7 +58,7 @@
     "users_by_country": "Users by Country",
     "revenue": "Revenue",
     "feed": "Feed",
-    "todo_list": "To Do List",
+    "lista_tareas": "Tareas Pendientes",
     "calendar": "Calendar",
     "new_visits": "New Visits",
     "purchases": "Purchases",
@@ -71,8 +71,8 @@
       "new_visits": "New Visits",
       "sales": "Sales"
     },
-    "todo": {
-      "task_todo": "Task to do.."
+    "tareas": {
+      "por_hacer": "Añadir tareas..."
     },
     "traffic_chart": {
       "view_total": "Views Total"

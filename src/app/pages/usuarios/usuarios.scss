@@ -50,12 +50,17 @@
     white-space: nowrap;
 }
 p.localidad {
-    width: 150px;
+    width: 160px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
 }
-
+p.email {
+    width: 250px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
 
 .avatarU {
     width: 45px;

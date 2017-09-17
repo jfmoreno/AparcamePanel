@@ -4,18 +4,40 @@
   </div>
 </div>
 
-<div class="row">
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
-                     title="dashboard.acquisition_channels" baCardClass="traffic-panel medium-card">
-    <traffic-chart></traffic-chart>
-  </ba-card>
 
-  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12"
-           title="dashboard.users_by_country" baCardClass="medium-card">
-    <users-map></users-map>
-  </ba-card>
+<div class="row">
+  <div class="col-lg-12 col-sm-12 col-12">
+       <div class="banner">
+         <div class="large-banner-wrapper">
+           <img src="../../../../assets/img/home/banner.png" alt="banneraparcame"/>
+         </div>
+         <div class="banner-text-wrapper">
+           <div class="banner-text">
+            <img class="logoAparcamebanner" src="../../../../assets/img/home/AparcameLogo.png" alt="logoaparcame">
+             <p>La app que encuentra aparcamiento</p>
+             <p>sin sensores, ni camaras y sin que que tengas que indicar que has aparcado</p>
+           </div>
+         </div>
+       </div>
+  </div>
 </div>
 
+
+
+
+
+<div class="row">
+
+  <div class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12">
+    <user-by-month></user-by-month>
+  </div>
+
+  <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12" title="Parkings Aparcame" baCardClass="medium-card">
+    <leaflet-maps></leaflet-maps>
+  </ba-card>
+
+</div>
+<!--
 <div class="row">
   <div class="col-xlg-9 col-xl-6 col-lg-6  col-md-12 col-sm-12 col-12">
     <div class="row">
@@ -23,6 +45,7 @@
                title="dashboard.revenue" baCardClass="medium-card">
         <line-chart></line-chart>
       </ba-card>
+
       <ba-card class="col-xlg-4 col-xl-12 col-lg-12 col-md-5 col-sm-12 col-12"
                baCardClass="popular-app medium-card">
         <popular-app></popular-app>
@@ -38,14 +61,17 @@
   </div>
 
 </div>
-
+-->
 <div class="row shift-up">
-  <ba-card class="col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-12" title="dashboard.todo_list"
+  <ba-card class="col-xlg-3 col-lg-6 col-md-12 col-sm-12 col-12" title="dashboard.lista_tareas"
            baCardClass="xmedium-card feed-comply-panel with-scroll todo-panel">
-    <todo></todo>
+    <tareas></tareas>
   </ba-card>
+
+  <!--
   <ba-card class="col-xlg-6 col-lg-6 col-md-12 col-sm-12 col-12" title="dashboard.calendar"
            baCardClass="xmedium-card feed-comply-panel with-scroll calendar-panel">
     <calendar></calendar>
   </ba-card>
+-->
 </div>

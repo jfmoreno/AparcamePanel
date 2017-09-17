@@ -1,21 +1,21 @@
 import {Component} from '@angular/core';
 import {BaThemeConfigProvider} from '../../../theme';
 
-import {TodoService} from './todo.service';
+import {TareasService} from './tareas.service';
 
 @Component({
-  selector: 'todo',
-  templateUrl: './todo.html',
-  styleUrls: ['./todo.scss']
+  selector: 'tareas',
+  templateUrl: './tareas.html',
+  styleUrls: ['./tareas.scss']
 })
-export class Todo {
+export class Tareas {
 
   public dashboardColors = this._baConfig.get().colors.dashboard;
 
   public todoList:Array<any>;
   public newTodoText:string = '';
 
-  constructor(private _baConfig:BaThemeConfigProvider, private _todoService:TodoService) {
+  constructor(private _baConfig:BaThemeConfigProvider, private _todoService:TareasService) {
     this.todoList = this._todoService.getTodoList();
 
     this.todoList.forEach((item) => {

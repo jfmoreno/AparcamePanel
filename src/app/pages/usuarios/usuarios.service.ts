@@ -9,7 +9,7 @@ export class UsuariosService {
   usuariosTable = [
     {
       id: 1,
-      imagen: 'assets/img/usuarios/Alexander.png',
+      imagen: 'assets/img/usuarios/Yo.png',
       nombre: 'Jose Fco Moreno Fernández',
       email: 'josefranciscomoreno85@gmail.com',
       cp: '03006',

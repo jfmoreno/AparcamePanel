@@ -58,6 +58,7 @@ export class ChartistJsService {
         showGrid: false
       }
     },
+    
     simpleBarData: {
       labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
       series: [
@@ -65,6 +66,7 @@ export class ChartistJsService {
         [13, 22, 49, 22, 4, 6, 24, 46, 57, 48, 22, 4]
       ]
     },
+
     simpleBarOptions: {
       fullWidth: true,
       height: '300px'
