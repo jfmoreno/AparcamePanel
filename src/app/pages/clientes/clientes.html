@@ -1,0 +1,76 @@
+
+<div class="widgets">
+    <div class="row" style="margin-left:0px">
+
+        <ba-card title="Clientes Aparcame" baCardClass="with-scroll" class="data-table-container">
+
+            <div class="panel panel-default">
+                
+                <div class="form-group row">
+                    <div class="col-md-6">
+                        <a class="buscar">Buscar</a>
+                        <div class="panel-heading">
+                        <input class="form-control" [(ngModel)]="filterQuery"/>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="margin-top: 25px;">
+                    <button class="btn btn-success" (click)="addParkingModal()"><i class="fa fa-plus-circle" aria-hidden="true"></i> Añadir</button>
+                    </div>
+                </div>
+                            
+                <table class="table table-striped" [mfData]="data | dataFilter : filterQuery" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage" [(mfSortBy)]="sortBy" [(mfSortOrder)]="sortOrder">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">
+                                <mfDefaultSorter by="id">ID </mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="imagen">Imagen</mfDefaultSorter>
+                            </th>
+                            <th>
+                                <mfDefaultSorter by="nombre">Nombre</mfDefaultSorter>
+                            </th>
+                            <th>
+                                <mfDefaultSorter by="email">Email</mfDefaultSorter>
+                            </th>
+                            <th style="width: 15%">
+                                <mfDefaultSorter by="telefono">Telefono</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%">
+                                <mfDefaultSorter by="cp">CP</mfDefaultSorter>
+                            </th>
+                            <th>
+                                <mfDefaultSorter by="localidad">Localidad</mfDefaultSorter>
+                            </th>
+                            <th style="width: 10%;">Editar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of mf.data">
+                            <td (click)="editModalShow()">{{item.id}}</td>
+                            <td (click)="editModalShow()"><img class="avatarU" src="{{ item.imagen }}"></td>
+                            <td (click)="editModalShow()"><p class="nombre">{{item.nombre}}</p></td>
+                            <td (click)="editModalShow()"><p class="email">{{item.email}}</p></td>
+                            <td (click)="editModalShow()"><p class="telefono">{{item.telefono}}</p></td>
+                            <td (click)="editModalShow()"><p class="cp">{{item.cp}}</p></td>
+                            <td (click)="editModalShow()"><p class="localidad">{{item.localidad}}</p></td>
+                            <td style="padding-right: 5px !important;"><button class="btn btn-info" (click)="editModalShow()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="9">
+                                <mfBootstrapPaginator [rowsOnPageSet]="[5,10,15]"></mfBootstrapPaginator>
+                            </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+            </div>
+           
+        </ba-card>
+
+    </div>
+</div>
+

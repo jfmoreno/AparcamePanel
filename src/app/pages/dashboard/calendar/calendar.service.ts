@@ -7,35 +7,36 @@ export class CalendarService {
   constructor(private _baConfig:BaThemeConfigProvider) {
   }
 
+  
   getData() {
 
     let dashboardColors = this._baConfig.get().colors.dashboard;
     return {
       header: {
         left: 'prev,next today',
-        center: 'title',
+        center: this.newFunction(),
         right: 'month,agendaWeek,agendaDay'
       },
-      defaultDate: '2016-03-08',
+      defaultDate: '2017-09-08',
       selectable: true,
       selectHelper: true,
       editable: true,
       eventLimit: true,
       events: [
         {
-          title: 'All Day Event',
-          start: '2016-03-01',
+          title: 'Visita a Clientes',
+          start: '2017-09-01',
           color: dashboardColors.silverTree
         },
         {
-          title: 'Long Event',
-          start: '2016-03-07',
-          end: '2016-03-10',
+          title: 'Vacaciones',
+          start: '2017-09-07',
+          end: '2017-09-10',
           color: dashboardColors.blueStone
         },
         {
-          title: 'Dinner',
-          start: '2016-03-14T20:00:00',
+          title: 'Tutoria Tutor TFG',
+          start: '2017-09-19T15:30:00',
           color: dashboardColors.surfieGreen
         },
         {
@@ -46,4 +47,8 @@ export class CalendarService {
       ]
     };
   }
+
+    private newFunction() {
+        return 'title';
+    }
 }

@@ -39,9 +39,19 @@ export const routes: Routes = [
         loadChildren: './usuarios/usuarios.module#UsuariosModule',
       },
       { 
+        path: 'clientes', 
+        loadChildren: './clientes/clientes.module#ClientesModule',
+      },
+      { 
+        path: 'ofertas', 
+        loadChildren: './ofertas/ofertas.module#OfertasModule',
+      },
+      { 
         path: 'adminTables', 
         loadChildren: './admin/adminTables.module#AdminTablesModule',
       },
+
+
 
 
 

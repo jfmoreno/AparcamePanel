@@ -10,26 +10,25 @@ import { Dashboard } from './dashboard.component';
 import { routing } from './dashboard.routing';
 
 //import { PopularApp } from './popularApp';
-import { PieChart } from './pieChart';
 //import { TrafficChart } from './trafficChart';
 //import { UsersMap } from './usersMap';
 //import { LineChart } from './lineChart';
-
 //import { Feed } from './feed';
-//import { Calendar } from './calendar';
-//import { CalendarService } from './calendar/calendar.service';
 //import { FeedService } from './feed/feed.service';
+//import { LineChartService } from './lineChart/lineChart.service';
+//import { TrafficChartService } from './trafficChart/trafficChart.service';
+//import { UsersMapService } from './usersMap/usersMap.service';
+
+import { PieChart } from './pieChart';
+import { Calendar } from './calendar';
+import { CalendarService } from './calendar/calendar.service';
 import { Tareas } from './tareas';
 import { TareasService } from './tareas/tareas.service';
-
 import { ZonasParkings } from './zonasParkings/leafletMaps.component';
-
-//import { LineChartService } from './lineChart/lineChart.service';
 import { PieChartService } from './pieChart/pieChart.service';
 import { UserMonth } from 'app/pages/dashboard/userMonth';
 import { UserMonthService } from 'app/pages/dashboard/userMonth/userMonth.service';
-//import { TrafficChartService } from './trafficChart/trafficChart.service';
-//import { UsersMapService } from './usersMap/usersMap.service';
+
 
 @NgModule({
   imports: [
@@ -50,13 +49,13 @@ import { UserMonthService } from 'app/pages/dashboard/userMonth/userMonth.servic
     ZonasParkings,
     //Feed,
     Tareas,
-    //Calendar,
+    Calendar,
   ],
   providers: [
     //LineChartService,
     PieChartService,
     UserMonthService,
-    //CalendarService,
+    CalendarService,
     //FeedService,
     TareasService,
     //TrafficChartService,

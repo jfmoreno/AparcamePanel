@@ -1,0 +1,22 @@
+<div class="vertical-scroll">
+  <table class="table table-striped">
+    <thead>
+    <tr>
+        <th class="oferta">ID</th>
+      <th class="imagen"><i class="fa fa-picture-o" aria-hidden="true"></i></th>
+      <th class="oferta">Oferta</th>
+      <th class="fecha">Fecha/Hora</th>
+      <th class="puntos">Puntos</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of ofertasTableData">
+        <td><p class="id">{{ item.id }}</p></td>
+      <td><img class="avatarO" src="{{ item.imagen }}"></td>
+      <td><p class="oferta">{{ item.oferta }}</p></td>
+      <td><p class="fecha">{{ item.fecha }}</p></td>
+      <td><p class="puntos">{{ item.puntos }}</p></td>
+    </tr>
+    </tbody>
+  </table>
+</div>

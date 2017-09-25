@@ -82,49 +82,87 @@ export const PAGES_MENU = [
         },
       },
 
+
+
+
       {
-        path: 'editors',
+        path: '',
         data: {
           menu: {
-            title: 'general.menu.editors',
-            icon: 'ion-edit',
+            title: 'general.menu.pages',
+            icon: 'ion-document',
             selected: false,
             expanded: false,
-            order: 100,
+            order: 650,
           },
         },
         children: [
           {
-            path: 'ckeditor',
+            path: ['/login'],
             data: {
               menu: {
-                title: 'general.menu.ck_editor',
+                title: 'general.menu.login',
+              },
+            },
+          },
+          {
+            path: ['/register'],
+            data: {
+              menu: {
+                title: 'general.menu.register',
               },
             },
           },
         ],
       },
 
+
+
+    
       {
-        path: 'charts',
+        path: 'tables',
         data: {
           menu: {
-            title: 'general.menu.charts',
-            icon: 'ion-stats-bars',
+            title: 'general.menu.tables',
+            icon: 'ion-grid',
             selected: false,
             expanded: false,
-            order: 200,
+            order: 500,
           },
         },
         children: [
           {
-            path: 'chartist-js',
+            path: 'basictables',
             data: {
               menu: {
-                title: 'general.menu.chartist_js',
+                title: 'general.menu.basic_tables',
               },
             },
           },
+          {
+            path: 'smarttables',
+            data: {
+              menu: {
+                title: 'general.menu.smart_tables',
+              },
+            },
+          },
+          {
+            path: 'datatables',
+            data: {
+              menu: {
+                title: 'Data Tables',
+              },
+            },
+          },
+           {
+             path: 'hottables',
+             data: {
+               menu: {
+                 title: 'Hot Tables',
+               },
+             },
+           },
         ],
       },
       {
@@ -220,49 +258,48 @@ export const PAGES_MENU = [
         ],
       },
       {
-        path: 'tables',
+        path: 'editors',
         data: {
           menu: {
-            title: 'general.menu.tables',
-            icon: 'ion-grid',
+            title: 'general.menu.editors',
+            icon: 'ion-edit',
             selected: false,
             expanded: false,
-            order: 500,
+            order: 100,
           },
         },
         children: [
           {
-            path: 'basictables',
+            path: 'ckeditor',
             data: {
               menu: {
-                title: 'general.menu.basic_tables',
+                title: 'general.menu.ck_editor',
               },
             },
           },
+        ],
+      },
+/*
+      {
+        path: 'charts',
+        data: {
+          menu: {
+            title: 'general.menu.charts',
+            icon: 'ion-stats-bars',
+            selected: false,
+            expanded: false,
+            order: 200,
+          },
+        },
+        children: [
           {
-            path: 'smarttables',
+            path: 'chartist-js',
             data: {
               menu: {
-                title: 'general.menu.smart_tables',
+                title: 'general.menu.chartist_js',
               },
             },
           },
-          {
-            path: 'datatables',
-            data: {
-              menu: {
-                title: 'Data Tables',
-              },
-            },
-          },
-           {
-             path: 'hottables',
-             data: {
-               menu: {
-                 title: 'Hot Tables',
-               },
-             },
-           },
         ],
       },
       {
@@ -311,38 +348,7 @@ export const PAGES_MENU = [
           },
         ],
       },
-      {
-        path: '',
-        data: {
-          menu: {
-            title: 'general.menu.pages',
-            icon: 'ion-document',
-            selected: false,
-            expanded: false,
-            order: 650,
-          },
-        },
-        children: [
-          {
-            path: ['/login'],
-            data: {
-              menu: {
-                title: 'general.menu.login',
-              },
-            },
-          },
-          {
-            path: ['/register'],
-            data: {
-              menu: {
-                title: 'general.menu.register',
-              },
-            },
-          },
-        ],
-      },
 
-      /*
       {
         path: '',
         data: {

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Routes } from '@angular/router';
-
+import {Injectable} from '@angular/core';
 import { BaMenuService } from '../theme';
 import { PAGES_MENU } from './pages.menu';
 
@@ -8,6 +8,7 @@ import { PAGES_MENU } from './pages.menu';
   selector: 'pages',
   templateUrl: './pages.html',
 })
+@Injectable()
 export class Pages {
 
   constructor(private _menuService: BaMenuService,) {

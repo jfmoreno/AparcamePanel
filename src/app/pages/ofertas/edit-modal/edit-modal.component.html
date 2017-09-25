@@ -1,0 +1,133 @@
+<div class="modal-content">
+  
+  <div class="modal-header">
+      <h4 class="modal-title"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> {{centrales.id}} - {{centrales.nombre}}</h4>
+      <button class="close" aria-label="Close" (click)="closeModal()">
+        <span aria-hidden="true"><i class="fa fa-remove fa-lg m-t-2" style="color:white;"></i></span>
+      </button>
+  </div>
+
+    <div class="modal-body">
+
+        <div class="row">
+
+            <form class="form-horizontal col-md-6" (ngSubmit)="onSubmit()" #postForm="ngForm">
+    
+                <div class="form-group row">
+                    <label class="col-sm-4 form-control-label" for="lugar">Lugar</label>
+                    <select class="form-control col-sm-6" 
+                    name="lugar"
+                    id="lugar"
+                    [(ngModel)]="centrales.lugar"
+                    #lugar="ngModel">
+                        <option>{{centrales.lugar}}</option>
+                        <option>1 - MadPilots Snack Bar</option>
+                        <option>2 - Ecological Drive</option>
+                        <option>3 - Aula 12</option>
+                    </select>
+                </div>
+        
+                <div class="bordelugar">
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" 
+                            style="color: rgba(204, 204, 204, 0.5);margin-bottom: 0px;font-size: 12px;">
+                            Dirección
+                        </label>
+                        <input type="text" class="form-control col-sm-8" style="font-size: 12px;" 
+                            placeholder="Dirección" 
+                            id="direccion" 
+                            name="direccion"
+                            [(ngModel)]="centrales.direccion"
+                            #direccion="ngModel"  
+                            disabled>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 form-control-label" 
+                            style="color: rgba(204, 204, 204, 0.5);margin-bottom: 0px;font-size: 12px;">
+                            Localización
+                        </label>
+                        <input type="text" class="form-control col-sm-2" style="font-size: 12px;"
+                            placeholder="CP" 
+                            id="cp" 
+                            name="cp"
+                            [(ngModel)]="centrales.cp"
+                            #cp="ngModel"  
+                            disabled>
+                        <input type="text" class="form-control col-sm-6" style="font-size: 12px;"
+                            placeholder="Localidad" 
+                            id="localidad" 
+                            name="localidad"
+                            [(ngModel)]="centrales.localidad"
+                            #localidad="ngModel"  
+                            disabled>
+                    </div>
+                </div>
+            
+                <div class="form-group row">
+                    <label class="col-sm-4 form-control-label">Nombre</label>
+                    <input type="text" class="form-control col-sm-6" placeholder="Nombre" 
+                    id="nombre" 
+                    name="nombre"
+                    [(ngModel)]="centrales.nombre"
+                    #nombre="ngModel"   
+                    required>
+                </div>
+        
+                <div class="form-group row">
+                    <label class="col-sm-4" for="textarea01">Descripción</label>
+                    <textarea class="form-control col-sm-6" 
+                        id="descripcion"
+                        name="descripcion" 
+                        placeholder="Descripción"
+                        [(ngModel)]="centrales.descripcion"
+                        #descripcion="ngModel"></textarea>
+                </div>
+        
+        
+                    <div class="form-group row">
+                        <label class="col-sm-7 form-control-label">Fecha</label>
+                        <input type="text" class="form-control col-sm-3" placeholder="Fecha" style="text-align: center;"
+                        id="fecha" 
+                        name="fecha"
+                        [(ngModel)]="centrales.fecha"
+                        #fecha="ngModel" 
+                        required>
+                    </div>
+                      <div class="form-group row">
+                          <label class="col-sm-7 form-control-label">Puntos</label>
+                          <input type="number" class="form-control col-sm-3" style="font-size: 25px; font-weight: 600; color: greenyellow; text-align: center;"
+                          placeholder="Puntos" 
+                          id="puntos" 
+                          name="puntos"
+                          [(ngModel)]="centrales.puntos"
+                          #puntos="ngModel" 
+                          required>
+                      </div>
+        
+        
+                      <div class="modal-footer">
+                          <button class="btn btn-primary btn-raised waves-light input-block-level" 
+                            style="float: right; margin-botton: 10px;"
+                            type="submit">
+                            Guardar
+                          </button>
+                      </div>
+                </form>
+        
+          
+                <div class="col-md-6" style="margin-top: 7%;">
+                    <label class="textImg" >Imagen 302x302px</label>
+                    <img-parking2 
+                        [picture]="profile.picture" 
+                        [defaultPicture]="defaultPicture" 
+                        [uploaderOptions]="uploaderOptions">
+                    </img-parking2>
+                </div>
+
+            
+
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,53 @@
+img.avatarO {
+    width: 60%;
+  }
+
+th.imagen {
+    width: 80px; 
+}
+
+th.oferta {
+  font-weight: 700;
+}
+
+th.fecha {
+  font-weight: 700;
+}
+th.puntos {
+  font-weight: 700;
+}
+
+.table > tbody > tr > td {
+  line-height: 30px;
+
+}
+
+p.oferta {
+  width: 150px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+p.fecha {
+  width: 115px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+p.puntos {
+  width: 55px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 600;
+  color: #40daf1;
+  font-size: 20px;
+  text-align: center;
+}
+
+p.flecha {
+  text-align: left;
+  margin-left: -20px;
+  margin-top: 10px;
+}

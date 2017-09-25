@@ -25,7 +25,7 @@ export class Calendar {
   private _onSelect(start, end):void {
 
     if (this._calendar != null) {
-      let title = prompt('Event Title:');
+      let title = prompt('Título del evento:');
       let eventData;
       if (title) {
         eventData = {

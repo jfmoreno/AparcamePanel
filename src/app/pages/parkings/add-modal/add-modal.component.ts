@@ -16,19 +16,7 @@ import { NgUploaderOptions } from 'ngx-uploader';
 
 export class AddModal implements OnInit {
 
-  /*modalHeader: string;
-  modalContent: string = `Lorem ipsum dolor sit amet,
-   consectetuer adipiscing elit, sed diam nonummy
-   nibh euismod tincidunt ut laoreet dolore magna aliquam
-   erat volutpat. Ut wisi enim ad minim veniam, quis
-   nostrud exerci tation ullamcorper suscipit lobortis
-   nisl ut aliquip ex ea commodo consequat.`;
-*/
 
-//LISTADO COORDENADAS
-  //latitudes: string[] = ['-0.514394', '-0.513611', '-0.513116', '-0.513914'];
-  //longitudes: string[] =  ['38.382214', '38.382401', '38.381278', '38.381100'];
- 
   longitudes: string[] = [];
   latitudes: string[] = [];
   
@@ -42,7 +30,8 @@ export class AddModal implements OnInit {
 
   //IMAGEN//
   public defaultPicture = 'assets/img/theme/nofoto.png';
-  public profile: any = { picture: 'assets/img/parking1.png' };
+  public profile: any = { picture: 'assets/img/theme/nofoto.png' };
+//public profile: any = { picture: 'assets/img/parking1.png' };
   
   public uploaderOptions: NgUploaderOptions = {
     // url: 'http://website.com/upload'

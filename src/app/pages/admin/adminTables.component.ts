@@ -45,6 +45,10 @@ export class AdminTables {
         title: 'E-mail',
         type: 'string',
       },
+      password: {
+        title: 'Contraseña',
+        type: 'string',
+      },
       empresa : {
         title: 'Empresa',
         type: 'string',

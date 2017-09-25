@@ -1,0 +1,74 @@
+@import "../../theme/sass/conf/conf";
+
+:host /deep/ .widgets {
+    .data-table-container {
+        width: 100%;
+        .panel-heading {
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+    }
+
+    ul.pagination {
+        margin-bottom: 5px;
+    }
+    ul.pagination {
+        float: right;
+    }
+    ul.pagination.tam {
+        float: left;
+    }
+
+}
+    th, td {
+      border: 2px solid $border-light !important;
+      line-height: 35px;
+      vertical-align: middle;
+      text-align: center;
+      
+    }
+
+  a.buscar {
+      font-size: 18px;
+  } 
+
+  th {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500 !important;
+  }
+  td p{
+    text-align: center;
+     cursor: pointer !important;
+     margin-bottom: 5px;
+  }
+    
+  p.nombre {
+    width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+p.descripcion {
+    width: 190px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+p.lugar {
+    width: 130px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+p.direccion {
+    width: 165px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.avatarU {
+    width: 45px;
+    border-radius: 10px;
+}

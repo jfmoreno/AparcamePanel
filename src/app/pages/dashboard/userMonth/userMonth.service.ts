@@ -9,7 +9,7 @@ export class UserMonthService {
 
 
     simpleBarData: {
-      labels: ['7', '8', '9', '10', '11', '12'],
+      labels: ['Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
       series: [
         [5, 11, 30, 30, 40, 60],
         [70, 75, 80, 90, 100, 120]
