@@ -1,0 +1,97 @@
+@import "../../theme/sass/conf/conf";
+@import '../../theme/sass/auth';
+:host /deep/ .widgets {
+        .data-table-container {
+            width: 100%;
+            .panel-heading {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        }
+        .picture-group {
+            border: 2px dashed #b8b8b8;
+            width: 206px;
+            height: 206px;
+            position: relative;
+            cursor: pointer;
+            margin-left: 15%;
+        }  
+
+        .modal-footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 40px;
+        }
+        .form-group label {
+            font-size: 15px;
+        }
+
+        .has-success .form-control-feedback, .has-success .form-control-label, .has-success .col-form-label, .has-success .form-check-label, .has-success .custom-control {
+            color: #09e209;
+            font-weight: 500;
+        }
+        .sub-little-text {
+            font-size: 12px;
+            margin-top: 14px;
+            padding-left: 10px;
+            color: #ff0030;
+            font-weight: 500;
+        }
+
+
+    @media screen and (min-width: 1360px) {
+        label.textImg {
+            text-align: center;
+            margin-left: 15%;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 1360px) {
+        label.textImg {
+            text-align: center;
+            margin-left: 10%;
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+        .picture-group {
+            margin-left: 11%;
+        }  
+    }
+
+
+    @media screen and (max-width: 995px) {
+        .form-group label {
+            font-size: 13px;
+        }
+        label.textImg {
+            font-size: 18px;
+        }
+    }
+
+
+    @media screen and (max-width: 767px) {
+        label.textImg {
+            text-align: center;
+            margin-left: 10%;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        label.textImg {
+            text-align: center;
+            margin-left: 5%;
+            font-size: 20px;
+            padding-bottom: 10px;
+        }
+        .modal-footer {
+
+            height: 30px;
+        }
+    }
+
+}

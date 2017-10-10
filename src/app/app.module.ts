@@ -3,7 +3,6 @@ import { LoginModule } from './pages/login/login.module';
 import { NgModule, ApplicationRef } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateService } from '@ngx-translate/core';
@@ -18,6 +17,27 @@ import { AppState, InternalStateType } from './app.service';
 import { GlobalState } from './global.state';
 import { NgaModule } from './theme/nga.module';
 import { PagesModule } from './pages/pages.module';
+
+
+import { AUTH_PROVIDERS, AuthHttp, AuthConfig} from 'angular2-jwt';
+import { provideAuth } from 'angular2-jwt';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { HttpModule, Http, RequestOptions } from '@angular/http';
+
+
+
+
+export function authHttpServiceFactory(http: Http, options: RequestOptions) {
+  return new AuthHttp(new AuthConfig({
+    tokenName: 'id_token',
+        tokenGetter: (() => localStorage.getItem('id_token')),
+        globalHeaders: [{'Content-Type':'application/json'}],
+     }), http, options);
+}
+
+
+
+
 
 
 // Application wide providers
@@ -54,6 +74,17 @@ export type StoreType = {
   ],
   providers: [ // expose our Services and Providers into Angular's dependency injection
     APP_PROVIDERS,
+
+    {
+      provide: AuthHttp,
+      useFactory: authHttpServiceFactory,
+      deps: [Http, RequestOptions]
+    },
+    {
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  },
+
   ],
 })
 

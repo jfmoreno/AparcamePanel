@@ -17,6 +17,7 @@ export const routes: Routes = [
     path: 'register',
     loadChildren: 'app/pages/register/register.module#RegisterModule',
   },
+
   {
     path: 'pages',
     component: Pages,
@@ -51,6 +52,10 @@ export const routes: Routes = [
         loadChildren: './admin/adminTables.module#AdminTablesModule',
       },
 
+      { 
+        path: 'perfilAdmin', 
+        loadChildren: './perfiladmin/perfiladmin.module#PerfilAdminModule',
+      },
 
 
 

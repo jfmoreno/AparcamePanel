@@ -36,16 +36,17 @@
                             <th style="width: 17%">
                                 <mfDefaultSorter by="localidad">Localidad</mfDefaultSorter>
                             </th>
-                            <th style="width: 10%">
+                            <th style="width: 7%">
                                 <mfDefaultSorter by="plazas">Plazas</mfDefaultSorter>
                             </th>
-                            <th style="width: 10%">
+                            <th style="width: 7%">
                                 <mfDefaultSorter by="adaptadas">P. Adaptadas</mfDefaultSorter>
                             </th>
-                            <th style="width: 10%">
+                            <th style="width: 7%">
                                 <mfDefaultSorter by="electricas">P. Eléctricas</mfDefaultSorter>
                             </th>
-                            <th style="width: 10%;">Editar</th>
+                            <th style="width: 4%;">Info</th>
+                            <th style="width: 4%;">Editar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,6 +59,7 @@
                             <td (click)="editModalShow()">{{item.plazas}}</td>
                             <td (click)="editModalShow()">{{item.adaptadas}}</td>
                             <td (click)="editModalShow()">{{item.electricas}}</td>
+                            <td style="padding-right: 5px !important;"><button class="btn btn-default btn-icon" (click)="estadisticModalShow()"><i class="fa fa fa-bar-chart"></i></button></td>
                             <td style="padding-right: 5px !important;"><button class="btn btn-info" (click)="editModalShow()"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button></td>
                         </tr>
                     </tbody>

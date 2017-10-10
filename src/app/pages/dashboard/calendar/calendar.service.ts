@@ -25,18 +25,18 @@ export class CalendarService {
       events: [
         {
           title: 'Visita a Clientes',
-          start: '2017-09-01',
+          start: '2017-09-29',
           color: dashboardColors.silverTree
         },
         {
-          title: 'Vacaciones',
-          start: '2017-09-07',
-          end: '2017-09-10',
+          title: 'Tutoria Miguel A.',
+          start: '2017-10-05T10:00:00',
           color: dashboardColors.blueStone
         },
         {
           title: 'Tutoria Tutor TFG',
-          start: '2017-09-19T15:30:00',
+          start: '2017-01-10',
+          end: '2017-01-12',
           color: dashboardColors.surfieGreen
         },
         {

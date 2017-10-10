@@ -22,3 +22,19 @@ a.btn {
   .al-content {
     padding: 8px 32px 8px 15px;
 }
+
+@media (min-width: 992px) {
+    .modal-dialog.modal-sm {
+        max-width: 99%;
+        margin: 5px auto;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .modal-dialog.modal-sm {
+        max-width: 99%;
+        margin: 5px auto;
+    }
+  }
+  
+  

@@ -1,0 +1,1 @@
+export * from './estadisticas-modal.component';

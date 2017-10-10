@@ -1,3 +1,9 @@
+import { EstadisticasModal } from './estadisticas/estadisticas-modal.component';
+import { PieChart } from './estadisticas/pieChart1/pieChart.component';
+import { ZonaParking3 } from './estadisticas/zonaParking3/leafletMaps.component';
+import { ChartistJs } from './estadisticas/chartistJs1/chartistJs.component';
+import { PieChartService } from './estadisticas/pieChart1/pieChart.service';
+import { ChartistJsService } from './estadisticas/chartistJs1/chartistJs.service';
 
 import { AddModal } from './add-modal/add-modal.component';
 import { ImgParking2 } from './add-modal/imgParking2/imgParking2.component';
@@ -8,6 +14,7 @@ import { EditModal } from './edit-modal/edit-modal.component';
 import { ImgParking } from './edit-modal/imgParking/imgParking.component';
 import { FormListComponent } from './edit-modal/form-list/form-list.component';
 import { ZonaParking1 } from './edit-modal/zonaParking1/leafletMaps.component';
+
 
 
 import { TodoListComponent } from './edit-modal/todo-list/todo-list.component';
@@ -47,8 +54,8 @@ import { DataFilterPipe } from './data-filter.pipe';
   ],
 
   declarations: [
-    Parkings,
     EditModal,
+    Parkings,
     DataFilterPipe,
     ZonaParking1,
     ImgParking,    
@@ -62,17 +69,27 @@ import { DataFilterPipe } from './data-filter.pipe';
     ImgParking2,    
     FormList2Component,
 
+
+    EstadisticasModal,
+    PieChart,
+    ZonaParking3,
+    ChartistJs,
   ],
 
   entryComponents: [
     EditModal,
     AddModal,
+    EstadisticasModal,
   ],
 
   providers: [
     ParkingsService,
+    PieChartService,
+    ChartistJsService,
   ],
 
 })
 export class ParkingsModule {
 }
+
+

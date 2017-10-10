@@ -83,8 +83,7 @@ export const PAGES_MENU = [
       },
 
 
-
-
+/*
       {
         path: '',
         data: {
@@ -279,6 +278,7 @@ export const PAGES_MENU = [
           },
         ],
       },
+      */
 /*
       {
         path: 'charts',

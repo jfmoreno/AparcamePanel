@@ -1,0 +1,60 @@
+<div class="modal-content">
+  
+  <div class="modal-header">
+    <h4 class="modal-title"><i class="fa fa fa-bar-chart"></i> {{modalHeader}}</h4>
+    
+    <button class="close" aria-label="Close" (click)="closeModal()">
+     <span aria-hidden="true"><i class="fa fa-remove fa-lg m-t-2" style="color:white;"></i></span>
+    </button>
+  </div>
+
+  <div class="modal-body">
+
+    <div class="row">
+
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <pie-chart></pie-chart>
+      </div>
+      
+    </div>
+
+
+    <div class="row">
+
+        <ba-card class="col-xlg-6 col-xl-6 col-lg-12 col-sm-12 col-12" title="Parking Facultad de Economia" baCardClass="medium-card">
+            <zona-parking3></zona-parking3>
+        </ba-card>
+
+        <ba-card class="col-xlg-6 col-xl-6" title="Parking Facultad de Economia" baCardClass="medium-card">
+            
+            <div class="img-wrapper1">
+                <img class="imgParking" src="{{ ( './parking1.png' | baAppPicture ) }}" alt="imgparking" title="Imagen Parking"/>
+            </div>
+
+        </ba-card>
+
+
+        <div class="col-lg-12 col-sm-12 col-12">
+            <chartist-js></chartist-js>
+        </div>
+          
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+<!--
+  <div class="modal-footer">
+    <button class="btn btn-primary confirm-btn" (click)="closeModal()">Cerrar</button>
+  </div>
+  -->
+</div>

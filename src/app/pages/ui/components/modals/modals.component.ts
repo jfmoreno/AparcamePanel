@@ -21,8 +21,7 @@ export class Modals {
   }
 
   staticModalShow() {
-    const activeModal = this.modalService.open(DefaultModal, {size: 'sm',
-                                                              backdrop: 'static'});
+    const activeModal = this.modalService.open(DefaultModal, {size: 'sm', backdrop: 'static'});
     activeModal.componentInstance.modalHeader = 'Static modal';
     activeModal.componentInstance.modalContent = `This is static modal, backdrop click
                                                     will not close it. Click × or confirmation button to close modal.`;
